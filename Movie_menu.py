@@ -1,4 +1,4 @@
-#! /usr/bin/env python3
+#! /usr/bin/python3
 
 movies = []
 
@@ -21,7 +21,7 @@ def menu():
 def add_movie():
     name = input('Enter the movie name: ')
     director = input('Enter the director  name: ')
-    year = int(input('Enter the movie release year: '))
+    year = input('Enter the movie release year: ')
 
     movies.append({
         'name': name,
@@ -38,12 +38,16 @@ def show_movies():
             print((movie['year']))
             print('\n')
     else:
-        print("Currently No movie in the stack! :( " )
+        print("Currently No movie in the stack! :( ")
+
 
 def find_movie():
-    pass
+    inq = input("Enter movie name: ")
+    for movie in movies:
+        if inq == movie['name']:
+            print(movie)
+    else:
+        print(f"{inq} not found!")
 
 
 menu()
-
-
