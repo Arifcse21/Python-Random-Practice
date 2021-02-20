@@ -1,0 +1,4 @@
+Arif, 23, BAUST, CSE
+Sharif, 22, BAUET, ME
+Maruf, 24, BAUIST, EEE
+BABUL, 23, MIST, IPE

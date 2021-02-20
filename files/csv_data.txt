@@ -1,0 +1,5 @@
+name, age, university, degree
+arif, 23, baust, computer science and engineering
+faruk, 22, mist, electrical and electronic engineering
+maruf, 24, buist, mechanical engineering
+tarek, 23, bauet, industrial production and engineering
