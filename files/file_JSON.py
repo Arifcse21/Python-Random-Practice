@@ -1,8 +1,7 @@
 import json
 
-file = open('friends_json.txt', 'r')
-file_content = json.load(file)  # reads file and turn into dictionary
-file.close()
+with open('friends_json.txt', 'r') as file:
+    file_content = json.load(file)  # reads file and turn into dictionary
 
 print(file_content['friends'][1])
 
@@ -15,13 +14,11 @@ cars = [
     }
 ]
 
-file1 = open("json_write.txt", 'w')
-json.dump(cars, file1)
-file1.close()
+with open("json_write.txt", 'w') as file1:
+    json.dump(cars, file1)
 
 
 json_string = '[{"name": "Arif", "age" : 23},{"name" : "None", "age": 33}]'
-
 jstring = json.loads(json_string)
 print(jstring[0]["name"])
 
